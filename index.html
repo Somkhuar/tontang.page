@@ -14,10 +14,31 @@
         }
         header {
             background: rgba(255,255,255,0.9);
-            padding: 2rem 0 1rem 0;
-            text-align: center;
+            padding: 1.5rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
             box-shadow: 0 2px 5px rgba(0,0,0,0.04);
         }
+        .logo-wrap {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(80,60,140,0.12);
+            background: none;
+            padding: 0;
+            display: block;
+            object-fit: cover;
+        }
+        .header-text { text-align: left; }
+        .header-text h1 { margin: 0; }
         h1 {
             font-size: 2.8rem;
             margin-bottom: 0.2em;
@@ -63,19 +84,27 @@
         @media (max-width: 600px) {
             main { padding: 1em 0.2em; }
             h1 { font-size: 2rem; }
+            header { flex-direction: column; gap: 0.5rem; padding: 1rem 0.5rem; }
+            .header-text { text-align: center; }
+            .logo-wrap { margin-bottom: 0.25rem; }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>ต้นทาง - TonTang</h1>
-        <div class="subtitle">จุดเริ่มต้นของแรงบันดาลใจและการเติบโต</div>
+        <div class="logo-wrap">
+            <img src="image/Facebook-Profile.png" alt="โลโก้ ต้นทาง - TonTang" class="header-logo" />
+        </div>
+        <div class="header-text">
+            <h1>ต้นทาง - TonTang</h1>
+            <div class="subtitle">จุดเริ่มต้นของแรงบันดาลใจและการเติบโต</div>
+        </div>
     </header>
     <main>
         <img src="image/Facebook-Cover.jpg" alt="ทางเดินสู่ต้นทาง" class="hero-img" />
         <p style="text-align:center; font-size:1.15em;">
-            ยินดีต้อนรับสู่ “ต้นทาง” พื้นที่สำหรับแบ่งปัน แรงบันดาลใจ การเรียนรู้ และประสบการณ์การเดินทางที่จะช่วยเติมเต็มความฝันของคุณ <br>
-            มาค้นหาเส้นทางใหม่ๆ ไปด้วยกัน...
+            บางครั้งการเดินทางเริ่มจากคำหนึ่งประโยค… “ต้นทาง – TonTang” <br>
+            คือพื้นที่สงบที่เปิดรับความคิด คำคม และเรื่องราวที่อาจพาคุณไปสู่จุดหมายใหม่
         </p>
         <div style="text-align:center;">
             <a class="btn-main" href="#start">เริ่มต้นเส้นทางของคุณ</a>
